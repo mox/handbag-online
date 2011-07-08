@@ -1,0 +1,18 @@
+<p id="notice"><%= notice %></p>
+<p>
+	<%= image_tag @template.image.url(:medium) %>
+</p>
+
+<p>
+  <b>Name:</b>
+  <%= @template.name %>
+</p>
+
+<p>
+  <b>Body:</b>
+  <%= @template.body %>
+</p>
+
+
+<%= link_to 'Edit', edit_template_path(@template) %> |
+<%= link_to 'Back', templates_path %>

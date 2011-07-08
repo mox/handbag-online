@@ -1,0 +1,36 @@
+/* */
+#wrapper{
+	margin:0 auto;
+	width:960px;
+}
+#menu ul li{
+	font-size:13pt;
+}
+/* */
+.template_form{
+	float:left;
+	width:400px;
+	padding:10px;
+	margin:20px;
+}
+.button_to{
+	float: left;
+    margin-right: 20px;
+    margin-top: 20px;
+}
+div.templates{
+	height:180px;
+	padding:10px;
+	width:350px;
+}
+/* css template */
+div#template_1{
+	background:#ccc;
+	border:1px solid #eee;
+	text-align:right;
+}
+div#template_2{
+	background:#eee;
+	border:1px solid #ccc;
+}
+

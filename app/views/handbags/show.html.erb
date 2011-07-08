@@ -1,0 +1,51 @@
+<p id="notice"><%= notice %></p>
+<h2>Введеная информация:</h2>
+<p>
+  
+  <%= image_tag @handbag.logo.url(:small) %>
+</p>
+<p>
+  <b>Фио:</b>
+  <%= @handbag.name %>
+</p>
+
+<p>
+  <b>Телефон:</b>
+  <%= @handbag.tel %>
+</p>
+
+<p>
+  <b>Email:</b>
+  <%= @handbag.email %>
+</p>
+
+<p>
+  <b>Адрес:</b>
+  <%= @handbag.adress %>
+</p>
+
+<p>
+  <b>Должность:</b>
+  <%= @handbag.job %>
+</p>
+<p>
+  <b>Шаблон:</b>
+  <%= link_to @handbag.template.name, template_path(@handbag.template) %>  
+</p>
+
+<%= image_tag @handbag.template.image.url(:medium) %>
+
+<%= link_to 'Edit', edit_handbag_path(@handbag) %> |
+<%= link_to 'Back', handbags_path %>
+
+<div class="entry">
+	<h2>Визитка:</h2>
+	
+	  <div class="template_form" style="  ">
+		<div id="template_" class="templates">
+			<p><span><%= @handbag.name %></span></p>
+			
+		</div>
+	  </div>
+</div>
+	

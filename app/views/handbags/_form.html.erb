@@ -1,0 +1,48 @@
+<%= form_for @handbag, :html => { :multipart => true } do |f| %>
+  <% if @handbag.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@handbag.errors.count, "error") %> prohibited this handbag from being saved:</h2>
+
+      <ul>
+      <% @handbag.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+  
+  <div class="field">
+  	<%= f.label :'Лого' %><br />
+  	<%= f.file_field :logo %>
+  </div>
+	
+  <div class="field">
+    <%= f.label :'Фамилия Имя Отчество' %><br />
+    <%= f.text_field :name %>
+  </div>
+  <div class="field">
+    <%= f.label :'Телефон' %><br />
+    <%= f.text_field :tel %>
+  </div>
+  <div class="field">
+    <%= f.label :email %><br />
+    <%= f.text_field :email %>
+  </div>
+  <div class="field">
+    <%= f.label :'Адрес' %><br />
+    <%= f.text_area :adress %>
+  </div>
+  <div class="field">
+    <%= f.label :'Должность' %><br />
+    <%= f.text_field :job %>
+  </div>
+  <div class="field">
+  	
+    <%= f.hidden_field :template_id %>
+  </div>
+  
+  
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

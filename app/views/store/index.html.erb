@@ -1,0 +1,13 @@
+<h1>Шаблоны визиток</h1>
+<% @templates.each do |template| %>
+	<div class="entry">
+		<h3><%= template.name %></h3>
+		<%= image_tag template.image.url(:medium)%>
+		<br />
+		
+		<p><%= link_to 'Выбрать шаблон', new_handbag_path(:template_id => template.id) %></p>
+	</div>
+	
+	
+	<br />
+<% end %>

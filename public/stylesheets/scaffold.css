@@ -1,0 +1,136 @@
+body { background-color: #fff; color: #333; }
+
+body, p, ol, ul, td {
+  font-family: verdana, arial, helvetica, sans-serif;
+  font-size:   13px;
+  line-height: 18px;
+}
+
+pre {
+  background-color: #eee;
+  padding: 10px;
+  font-size: 11px;
+}
+
+a { color: #000; }
+a:visited { color: #000; }
+a:hover { color: #409A91; }
+
+div.field, div.actions {
+  margin-bottom: 10px;
+}
+
+#notice {
+  color: green;
+}
+
+.field_with_errors {
+  padding: 2px;
+  background-color: red;
+  display: table;
+}
+
+#error_explanation {
+  width: 450px;
+  border: 2px solid red;
+  padding: 7px;
+  padding-bottom: 0;
+  margin-bottom: 20px;
+  background-color: #f0f0f0;
+}
+
+#error_explanation h2 {
+  text-align: left;
+  font-weight: bold;
+  padding: 5px 5px 5px 15px;
+  font-size: 12px;
+  margin: -7px;
+  margin-bottom: 0px;
+  background-color: #c00;
+  color: #fff;
+}
+
+#error_explanation ul li {
+  font-size: 12px;
+  list-style: square;
+}
+
+/* my styles */
+.left{float:left;}
+.right{float:right;}
+.clear{clear:both;}
+#wrapper{
+	margin: 0 auto;
+	width:984px;	
+}
+/* header, menu */
+#header{
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+
+	background-color: #409A91;
+	color:#FCFFFF;
+    display: block;
+    height: 100px;
+    padding: 20px;
+}
+#header p{
+	font-size:13pt;
+}
+h1, h2, h3{font-weight: 100;}
+#header h1{
+	font-size: 26pt;    
+}
+#header a{
+	color:#fff;
+	text-weight:100;
+	text-decoration:none;
+}
+#header a:hover{
+	color:#A0CECE;
+}
+ul#menu{
+	display: block;
+    position: relative;
+    right: 20px;
+    top: 20px;
+}
+ul#menu li{
+	float: left;
+    font-size: 14pt;
+    list-style-type: none;
+    margin: 0 20px;
+}
+/* content */
+#content{padding:20px;margin-left:180px;}
+/* footer */
+#footer{margin-top:40px;}
+#footer p{text-align:center;}
+
+/* */
+.admin_links a{font-size:7pt;}
+.template_list{
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	
+	background:#eee;
+	float:left;
+	width:180px;
+	padding:10px;
+	margin-right:20px;
+}
+#profile{
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+	
+	background-color: #A0CECE;
+    color: #FFFFFF;
+    height: 100px;
+    margin-right: 20px;
+    margin-top: 40px;
+    padding: 20px;
+    width: 120px;
+}
